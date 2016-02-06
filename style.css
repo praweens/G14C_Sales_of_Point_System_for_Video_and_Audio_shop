@@ -1,0 +1,131 @@
+body{
+	background-color: white;
+font-family: arial;
+	}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+h3{
+	font-weight:bold;
+	font-family: Verdana;
+	font-size:18px;
+	
+}
+
+ table, th, td {
+    border: none;
+    padding: 5px;
+}
+
+#container{
+	background-color: gray;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#header{
+	width: 1000px;
+	background-color: yellow;
+	
+	
+}
+
+#content{
+	padding: 10px;
+	
+	
+}
+
+
+	
+}
+ #nav{
+	 background-color: green;
+	
+ }
+ 
+ #nav_wrapper{
+	 width:1000px;
+	 margin:0 auto;
+	 text-align: left;
+	 
+ }
+ #nav ul{
+	 list-style-type: none;
+	 padding: 0;
+	 margin:0;
+	 position: relative;
+	 
+ }
+ 
+ #nav  ul li{
+	 display: inline-block;
+	 
+ }
+ 
+ #nav ul li:hover{
+	 background-color: #333;
+ }
+ 
+ #nav ul li a,visited{
+	 color: white;
+	 display:block;
+	 padding:15px;
+ }
+ 
+ nav ul li a:hover{
+	 color: #ccc;
+	 text-decoration: none;
+	 
+	 
+ }
+ 
+ #nav ul li:hover ul{
+	display: block;
+ }
+ 
+ #nav ul ul{
+	 display: none;
+	 position: absolute;
+	 background-color: #333;
+ }
+
+ #nav ul ul li{
+	 display: block;
+	 
+ }
+ #nav ul ul li a,visited{
+	 color: #ccc;
+	 
+ }
+
+ #nav ul ul li a:hover{
+	 
+	 color: #099;
+ }
+ 
+ #form{
+	 text-align:right;
+	 position:far-right;
+	 padding:none;
+ }
+ #main (
+ width: 820px;
+ float: right;
+ )
+ 
+ #table{
+	 border-spacing:15px;
+ }
+ 
+ #footer{
+	 clear:both;
+	 padding: 10px;
+	 background-color: #999999;
+	 color:white;
+	 text-align:right;
+ }
