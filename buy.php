@@ -16,11 +16,7 @@ if (!empty($_POST)){
      date_default_timezone_set('Asia/Kuala_Lumpur');
      $date = date('H:i:s d-m-y');
      $t = time();
-
-
-
-
-     $query = "INSERT INTO dummy (music_id,category,date,time) VALUES ('$song','buy','$date','$t')";
+     $query = "INSERT INTO dummy (music_id,category,date,time) VALUES ('$temp','buy','$date','$t')";
      mysql_query($query) or die(mysql_error());}
      else {
        echo "There is a problem";

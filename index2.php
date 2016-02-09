@@ -17,19 +17,6 @@
 		//Set our user and authID variables
 		$user = $cookie['user'];
 		$authID = $cookie['authID'];
-
-		//Query the database for the selected user
-		$table = 'j_users';
-		$sql = "SELECT * FROM $table WHERE user_login = '" . $user . "'";
-		$results = $jdb->select($sql);
-
-		//Kill the script if the submitted username doesn't exit
-		if (!$results) {
-			die('Sorry, that username does not exist!');
-		}
-
-		//Fetch our results into an associative array
-		$results = mysql_fetch_assoc( $results );
 ?>
 
 <html>
@@ -76,7 +63,7 @@ image3.src="images/am.png"
 
 </li>
 <li><a href="#">Artist</a></li>
-<li><a href="#">Song</a></li>
+<li><a href="http://localhost/project/music_list.php">Song</a></li>
 </ul>
 </li><li>
 <a href="#">Movies</a>
@@ -88,6 +75,7 @@ image3.src="images/am.png"
 </ul>
 </li><li>
 <a href="login.php?action=logout"> logout</a></li><li>
+<a href="music_list.php"> music</a></li><li>
 <a href="album.php"> My Account</a>
 </li>
 </ul>
