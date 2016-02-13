@@ -22,6 +22,7 @@
 <html>
 <head>
 <title>CoolKat Music Store</title>
+<link href="css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css" media="all" />
 <script type="text/javascript">
 <!-->
@@ -34,6 +35,11 @@ image3.src="images/am.png"
 //-->
 </script>
 
+
+
+
+
+
 </head>
 
 <body>
@@ -41,54 +47,61 @@ image3.src="images/am.png"
 <div id="container">
 <div id="header">
 <img id="logo"src="images/banner1.gif" width="195"; height="100";/>
-<img id="logo"src="images/logo1.gif" width="195"; height="100";/>
-<img id="logo"src="images/logo2.gif" width="195"; height="100";/>
-<img id="banner" src="images/banner.gif" width="195"; height="100" />
-<img id="logo"src="images/logo1.gif" width="200"; height="100";/>
+<img id="logo"src="images/banner4.gif" width="195"; height="100";/>
+<img id="logo"src="images/banner3.gif" width="195"; height="100";/>
+<img id="logo"src="images/banner.gif" width="195"; height="100" />
+<img id="logo"src="images/mj.gif" width="195"; height="100" />
+
 </div>
 
-<div id="content">
-<div id="nav">
-<div id="nav_wrapper">
-<ul>
-<li><a href="#">Home</a><li>
-<a href="#">Music</a>
-<ul>
-<li><a href="#">Genre</a>
-<ul>
-<li><a href="#">Pop</a></li>
-<li><a href="#">R&B</a></li>
-<li><a href="#">HipHop</a></li>
+
+<ul id="drop-nav">
+
+  <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+  <li><a href="#"><i class="fa fa-music"></i> Music</a>
+    <ul>
+      <li><a href="#">Pop</a></li>
+      <li><a href="#">HipHop</a></li>
+      <li><a href="#">Rock</a></li>
+      <li><a href="#">Jazz</a></li>
+      <li><a href="#">Soul</a></li>
+    </ul>
+  </li>
+  <li><a href="#"><i class="fa fa-film"></i> Movie</a>
+    <ul>
+      <li><a href="#">Horror</a></li>
+      <li><a href="#">Comedy</a></li>
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Romance</a></li>
+      <li><a href="#">Adventure</a></li>
+    </ul>
+  </li>
+   <ul style="float:right;list-style-type:none;">
+  <li><a href="#"><i class="fa fa-info-circle"></i> My Account</a></li>
+    <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
 </ul>
 
-</li>
-<li><a href="#">Artist</a></li>
-<li><a href="http://localhost/project/music_list.php">Song</a></li>
-</ul>
-</li><li>
-<a href="#">Movies</a>
-<ul>
-<li><a href="#">Genre</a></li>
-<li><a href="#">New Released</a>
-</li>
-<li><a href="#">Title</a></li>
-</ul>
-</li><li>
-<a href="login.php?action=logout"> logout</a></li><li>
-<a href="music_list.php"> music</a></li><li>
-<a href="album.php"> My Account</a>
-</li>
-</ul>
-</div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div id="main">
-<img id="jb" src="images/jb.jpg" name="slide" width="800" height="300">
+<img id="jb" src="images/jb.jpg" name="slide" width="1000" height="350">
 <script type="text/javascript">
 <!--
 var step=1
 function slideit(){
+
 document.images.slide.src=eval("image"+step+".src")
 if(step<3)
 step++
@@ -97,6 +110,7 @@ step=1
 setTimeout("slideit()",2500)
 }
 slideit()
+
 //-->
 </script>
 </div>
@@ -105,11 +119,11 @@ slideit()
 <h3>Music Album</h3>
 <table style="width:50px">
 <tr>
-<td><img src="images/a1.jpg" style="width:180px;height:180px;"/></td>
-<td><img src="images/a2.jpg" style="width:180px;height:180px;"/></td>
-<td><img src="images/a3.jpg" style="width:180px;height:180px;"/></td>"
-<td><img src="images/JT2020.jpg" style="width:180px;height:180px;" /></td>
-<td><img src="images/MG.jpg" style="width:180px;height:180px;" /></td>
+<td><img src="images/a1.jpg" style="width:190px;height:180px;"/></td>
+<td><img src="images/a2.jpg" style="width:190px;height:180px;"/></td>
+<td><img src="images/a3.jpg" style="width:190px;height:180px;"/></td>
+<td><img src="images/JT2020.jpg" style="width:190px;height:180px;" /></td>
+<td><img src="images/MG.jpg" style="width:190px;height:180px;" /></td>
 </tr>
 </table>
 <a href="album.php" > Show All</a><img src="images/next.png" style="width:20px;height:18px;"/>
@@ -120,17 +134,17 @@ slideit()
 <h3>Latest Movies</h3>
 <table style="width:50px">
 <tr>
-<td><img src="images/m1.jpg" style="width:180px;height:180px;" /></td>
-<td><img src="images/m2.jpg" style="width:180px;height:180px;"/></td>
-<td><img src="images/m3.jpg" style="width:180px;height:180px;"/></td>
-<td><img src="images/KM.jpg" style="width:180px;height:180px;"/></td>
-<td><img src="images/HM.jpg" style="width:180px;height:180px;"/></td>
+<td><img src="images/m1.jpg" style="width:190px;height:180px;" /></td>
+<td><img src="images/m2.jpg" style="width:190px;height:180px;"/></td>
+<td><img src="images/m3.jpg" style="width:190px;height:180px;"/></td>
+<td><img src="images/KM.jpg" style="width:190px;height:180px;"/></td>
+<td><img src="images/UD.jpg" style="width:190px;height:180px;"/></td>
 </tr>
 </table>
-<a href="movie.php" > Show All</a><img src="images/next.png" style="width:20px;height:18px;"/>
+<a href="movie.php" > Show All</a><img src= "images/next.png" style="width:20px;height:18px;"/>
 </div>
 
-<div id="footer"><h2 style="text-align:center;">&copy 2016 Coolkat Music Store<h2></div>
+<div id="footer"><h3>CoolKat Music Store&copycopyright 2016<h3></div>
 
 </div>
 
