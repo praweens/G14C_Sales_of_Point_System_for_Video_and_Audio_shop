@@ -1,7 +1,7 @@
 body{
-	background-color: white;
-font-family: arial;
-	}
+background-color:white;
+font-family:arial;
+}
 
 a {
 	text-decoration: none;
@@ -12,7 +12,7 @@ h3{
 	font-weight:bold;
 	font-family: Verdana;
 	font-size:18px;
-	
+
 }
 
  table, th, td {
@@ -22,119 +22,68 @@ h3{
 }
 
 #container{
-	background-color: gray;
-	width:1000px;
-	margin-left:auto;
-	margin-right:auto;
+background-color:white;
+width:995px;
+margin-left:auto;
+margin-right:auto;
 }
 
 #header{
-	width: 1000px;
-	background-color: yellow;
-	
-	
+background-color:#000000;
 }
 
 #content{
-	padding: 10px;
-	
-	
+padding:10px;
 }
 
-
-	
-}
- #nav{
-	 background-color: green;
-	
- }
- 
- #nav_wrapper{
-	 width:1000px;
-	 margin:0 auto;
-	 text-align: left;
-	 
- }
- #nav ul{
-	 list-style-type: none;
-	 padding: 0;
-	 margin:0;
-	 position: relative;
-	 
- }
- 
- #nav  ul li{
-	 width: 120px;
-	 display: inline-block;
-	 
- }
- 
- #nav ul li:hover{
-	 background-color: #333;
- }
- 
- #nav ul li a,visited{
-	 color: white;
-	 display:block;
-	 padding:15px;
- }
- 
- nav ul li a:hover{
-	 color: #ccc;
-	 text-decoration: none;
-	 
-	 
- }
- 
- #nav ul li:hover ul{
-	display: block;
-	
- }
- 
- #nav ul ul{
-	 display: none;
-	 position: absolute;
-	 background-color: #333;
- }
-
- #nav ul ul li{
-	 display: block;
-	 
- }
- #nav ul ul li a,visited{
-	 color: #ccc;
-	 
- }
-
- #nav ul ul li a:hover{
-	 
-	 color: #099;
- }
- 
- #nav ul ul ul{
-	 margin-left:120px;
-	 top: 0px;
-	 
- }
- 
- #form{
-	 text-align:right;
-	 position:far-right;
-	 padding:none;
- }
- #main (
+#main (
  width: 820px;
  float: right;
  )
- 
+
  #table{
 	 border-spacing:15px;
  }
- 
+
  #footer{
 	 clear:both;
 	 padding: 10px;
-	 background-color: #999999;
-	 color:white;
-	 text-align:right;
+	 background-color:#000;
+	 color:black;
+	 text-align:center;
+ }
+
+
+
+/* Menu Styles */
+
+ ul {list-style: none;
+   padding: 0px;
+   margin: 0px;
+ }
+ ul li {display: block;
+   position: relative;
+   float: left;
+   border:1px solid #000;
+ }
+ li ul {display: none;
+ }
+ ul li a {display: block;
+   background: #fff;
+   padding: 5px 10px 5px 10px;
+   text-decoration: none;
+          color: #000;
+        }
+ ul li a:hover {background: #f00;
+ }
+ li:hover ul {display: block;
+    position: absolute;
+  }
+ li:hover li {float: none;
+ }
+ li:hover a {background: #f00;
+ }
+ li:hover li a:hover {background: #fff;
+ }
+ #drop-nav li ul li {border-top: 0px;
  }
