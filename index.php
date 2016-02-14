@@ -33,39 +33,104 @@
 ?>
 <html>
 	<head>
+		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<title>Members Area</title>
 		<style type="text/css">
-			body { background: #c7c7c7;}
+			
+			h3 {
+				color: orange;
+				text-shadow: 2px 2px #FF0000;
+				font-size: 40px;
+				}
+			
+			b{
+				font-size: 20px;
+			}
+
+			label {
+				color: orange;
+				font-size: 20px;
+				}
+	
+			input[type=text], select {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				font-size: 20px;
+				}
+
+			body {
+				background-color : black;
+				}
+
+			div {
+				border-radius: 5px;
+				background-color: gray;
+				padding: 40px;
+				}
+				
+			.button {
+				display: inline-block;
+				padding: 10px 10px;
+				font-size: 16px;
+				cursor: pointer;
+				text-align: center;	
+				text-decoration: none;
+				outline: none;
+				color: #000000;
+				background-color: #FF6600;
+				border: none;
+				border-radius: 15px;
+				box-shadow: 0 9px #999;
+				}
+
+			.button:hover {background-color: #FF3300}
+
+			.button:active {
+				background-color: #FF3300;
+				box-shadow: 0 5px #666;
+				transform: translateY(4px);
+			}
+
+			
 		</style>
 	</head>
 
 	<body>
 		<div style="width: 960px; background: #fff; border: 1px solid #e4e4e4; padding: 20px; margin: 10px auto;">
 			<h3>Members Area</h3>
-			<p><b>User Info</b></p>
-			<table>
-				<tr>
-					<td>Name: </td>
-					<td><?php echo $results['user_name']; ?></td>
-				</tr>
+			<p><b>-User Info-</b></p>
+			<form>
+				
+					<label>Name: </label>
+					<input type="text" id="name" name="name" value="<?php echo $results['user_name']; ?>"  readonly="readonly">
+				
 
-				<tr>
-					<td>Username: </td>
-					<td><?php echo $results['user_login']; ?></td>
-				</tr>
+				
+					<label>Username: </label>
+					<input type="text" id="username" name="username" value="<?php echo $results['user_login']; ?>"  readonly="readonly">
+				
 
-				<tr>
-					<td>Email: </td>
-					<td><?php echo $results['user_email']; ?></td>
-				</tr>
+				
+					<label>Email: </label>
+					<input type="text" id="email" name="email" value="<?php echo $results['user_email']; ?>"  readonly="readonly">
+				
 
-				<tr>
-					<td>Registered: </td>
-					<td><?php echo date('l, F jS, Y', $results['user_registered']); ?></td>
-				</tr>
-			</table>
-
+				
+					<label>Registered: </label>
+					<input type="text" id="registered" name="registered" value="<?php echo date('l, F jS, Y', $results['user_registered']); ?>"  readonly="readonly">
+				
+			</form>
+			
+			<a href="index2.php" class="button"><i class="fa fa-home fa-2x"></i></a>
+			
 			<p>This is the members only area. Only logged in users can view this page. Please <a href="login.php?action=logout">click here to logout</a></p>
+			
+			
 
 
 		</div>
