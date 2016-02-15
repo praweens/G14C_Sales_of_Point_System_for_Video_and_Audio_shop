@@ -1,4 +1,5 @@
 <?php
+	include 'fixdesign2.php';
 	require_once('load.php');
 	$logged = $j->checkLogin();
 
@@ -30,18 +31,18 @@
 
 		//Fetch our results into an associative array
 		$results = mysql_fetch_assoc( $results );
+		
 ?>
+
 <html>
 	<head>
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<title>Members Area</title>
 		<style type="text/css">
+		<div id="container">
+<div id="header">
 			
-			h3 {
-				color: orange;
-				text-shadow: 2px 2px #FF0000;
-				font-size: 40px;
-				}
+		
 			
 			b{
 				font-size: 20px;
@@ -63,14 +64,10 @@
 				font-size: 20px;
 				}
 
-			body {
-				background-color : black;
-				}
 
 			div {
-				border-radius: 5px;
-				background-color: gray;
-				padding: 40px;
+				
+		        padding:0px;
 				}
 				
 			.button {
@@ -96,12 +93,12 @@
 				transform: translateY(4px);
 			}
 
-			
+			</div>
 		</style>
 	</head>
 
 	<body>
-		<div style="width: 960px; background: #fff; border: 1px solid #e4e4e4; padding: 20px; margin: 10px auto;">
+		<div style="width: 945px; background: #fff; border: 1px solid #e4e4e4; padding: 20px; margin: 10px auto;">
 			<h3>Members Area</h3>
 			<p><b>-User Info-</b></p>
 			<form>
@@ -137,3 +134,6 @@
 	</body>
 </html>
 <?php } ?>
+
+<div id="footer"><h3>CoolKat Music&copy Copyright 2016<h3></div>
+

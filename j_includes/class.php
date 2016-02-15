@@ -101,6 +101,7 @@ if(!class_exists('Joomba')){
 				$sql = "SELECT * FROM $table WHERE user_login = '" . $subname . "'";
 				$results = $jdb->select($sql);
 
+
 				//Kill the script if the submitted username doesn't exit
 				if (!$results) {
 					die('Sorry, that username does not exist!');
@@ -111,6 +112,7 @@ if(!class_exists('Joomba')){
 
 				//The registration date of the stored matching user
 				$storeg = $results['user_registered'];
+				$storeid = $results['ID'];
 
 				//The hashed password of the stored matching user
 				$stopass = $results['user_pass'];
@@ -131,7 +133,7 @@ if(!class_exists('Joomba')){
 					//Set our authorization cookie
 					setcookie('joombologauth[user]', $subname, 0, '', '', '', true);
 					setcookie('joombologauth[authID]', $authID, 0, '', '', '', true);
-					setcookie('joombologauth[userID]', $query, 0, '', '', '', true);
+					setcookie('joombologauth[userID]', $storeid, 0, '', '', '', true);
 
 					//Build our redirect
 					$url = "http" . ((!empty($_SERVER['HTTPS'])) ? "s" : "") . "://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];

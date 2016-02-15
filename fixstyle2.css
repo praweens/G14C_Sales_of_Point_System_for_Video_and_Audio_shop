@@ -1,0 +1,66 @@
+body{
+background-color: #EB2020;;
+font-family:arial;
+}
+
+h3{
+	font-weight:bold;
+	font-family: Verdana;
+	font-size:18px;
+	color: red;
+
+}
+
+#container{
+background-color:white;
+width:995px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#header{
+background-color:#000000;
+}
+
+#footer{
+  clear:both;
+  padding: 10px;
+  background-color:#000;
+  text-align:center;
+}
+
+
+
+
+/* Menu Styles */
+
+ ul {list-style: none;
+   padding: 0px;
+   margin: 0px;
+ }
+ ul li {display: block;
+   position: relative;
+   float: left;
+   border:1px solid #000;
+ }
+ li ul {display: none;
+ }
+ ul li a {display: block;
+   background: #fff;
+   padding: 5px 10px 5px 10px;
+   text-decoration: none;
+          color: #000;
+        }
+ ul li a:hover {background: #f00;
+ }
+ li:hover ul {display: block;
+    position: absolute;
+  }
+ li:hover li {float: none;
+ }
+ li:hover a {background: #f00;
+ }
+ li:hover li a:hover {background: #fff;
+ }
+ #drop-nav li ul li {border-top: 0px;
+ }

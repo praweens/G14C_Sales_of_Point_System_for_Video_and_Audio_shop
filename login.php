@@ -1,20 +1,25 @@
 
 <?php
-
 	require_once('load.php');
+?>
+<?php
+	$_GET['action']  = isset($_GET['action']) ? $_GET['action'] : null;
+$_GET['reg']  = isset($_GET['reg']) ? $_GET['reg'] : null;
+$_GET['msg']  = isset($_GET['msg']) ? $_GET['msg'] : null;
+
+
 	if ( $_GET['action'] == 'logout' ) {
 		$loggedout = $j->logout();
 	}
-
 	$logged = $j->login('index2.php');
-
+	
 ?>
 <html>
 	<head>
 		<title>Login Form</title>
 		<style type="text/css">
 			body { background-image: url('images/bcground.jpg');}
-			
+
 			#boxdesign{
 		width: 100%;
 		padding: 12px 20px;
@@ -25,11 +30,9 @@
 		transition: 0.5s;
 		outline: none;
 }
-
 #boxdesign:focus {
     border: 3px solid #555;
 }
-
 #button{
 	 background-color: #4CAF50;
     border: none;
@@ -39,14 +42,12 @@
     margin: 4px 2px;
     cursor: pointer;
 	width:100%;
-	
-}
 
+}
 p{
- font-family: 'Open Sans', sans-serif; 
+ font-family: 'Open Sans', sans-serif;
  font-size: 16px;
 }
-
  h4{
 	 text-align:center;
  }
@@ -55,8 +56,6 @@ div.transbox{
   opacity: 0.9;
   filter: alpha(opacity=0);
 }
-
-
 		</style>
 	</head>
 
