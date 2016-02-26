@@ -8,9 +8,9 @@
 #**Group Members**:sparkles:
 Name | ID
 -------------|-------------
-Khairul Hafizudden bin Abdul Aziz | 113270
-Wan Zhafri bin Wan Ahmad Kamal | 113270
-Praween a/l | 113270
+Khairul Hafizudden bin Abdul Aziz | 1132702750
+Wan Zhafri bin Wan Ahmad Kamal | 1131120355
+Praweens a/l Tiruvalar Ramasamy | 1131120891
 Nur Ifqin Alisa bte Mohmad@Mohamad |1132702872
 
 
